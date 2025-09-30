@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h1, p {                  /* group */
+            color: red
+        }
+        #foo > p, h1 {
+            color: purple
+        }
+        #foo + h6 {             /* first h6 after #foo */
+            color: chocolate
+        }
+    </style>
+</head>
+
+<body>
+    <div id="foo">
+        <h1>Tittle</h1>
+        <p>Hello</p>
+        <li>CSS</li>
+    </div>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea maiores, quisquam eligendi consequatur in a magni esse odit enim cum ad. In fuga magni recusandae quasi, nemo voluptas aspernatur.</h6>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea maiores, quisquam eligendi consequatur in a magni esse odit enim cum ad. In fuga magni recusandae quasi, nemo voluptas aspernatur.</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea maiores, quisquam eligendi consequatur in a magni esse odit enim cum ad. In fuga magni recusandae quasi, nemo voluptas aspernatur.</p>
+</body>
+
+</html>

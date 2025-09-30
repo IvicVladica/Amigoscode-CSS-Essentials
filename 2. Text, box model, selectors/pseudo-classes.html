@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        nav li:hover {
+            color: chocolate;
+            cursor: pointer;
+        }
+        nav li:nth-child(odd) {
+            color: red;
+        }
+        nav li:nth-child(even) {
+            color: blue;
+        }
+        #features::before {
+            content: "✔ ";
+            color:red;
+        }
+        #features::after {
+            content: " 👌";
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Login</li>
+        </ul>
+        <h1 id="features">Features</h1>
+    </nav>
+</body>
+</html>
