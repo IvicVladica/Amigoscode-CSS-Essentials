@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer {
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        .layout {
+            display: flex;
+            flex-direction: row;
+        }
+        nav {
+            background-color: bisque;
+            flex: 1;
+            padding: 10px;
+        }
+        main {
+            flex: 2;
+            min-height: 400px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        aside {
+            background-color: gray;
+            flex: 1;
+            padding: 10px;
+        }
+        a {
+            color: white;
+            margin: 0px 10px;
+        }
+        @media (max-width: 768px) {
+            .layout {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="">Home</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+    </header>
+
+    <section class="layout">
+        <nav>Side navigation</nav>
+        <main>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor eligendi saepe vel dolores unde provident quisquam reiciendis voluptatibus nostrum, recusandae harum commodi minima, ut labore. Asperiores fuga exercitationem cupiditate!</main>
+        <aside>Related info</aside>
+    </section>
+
+    <footer>Footer</footer>
+
+</body>
+</html>

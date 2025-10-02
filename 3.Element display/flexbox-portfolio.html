@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Roboto';
+        }
+        header {
+            background-color: lightgreen;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px
+        }
+        #about {
+            background-color: lightgray;
+        }
+        #projects {
+            background-color: azure;
+        }
+        #project-grid {
+            display: grid;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        #contact {
+            background-color: yellow;
+        }
+        #contact a {
+            color: red
+        }
+        footer {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>James</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, nulla minus, rerum sapiente magnam necessitatibus ipsum possimus mollitia beatae aut perferendis labore quibusdam. Expedita animi, non sequi quam officia soluta.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae, explicabo maxime voluptatibus ducimus iure</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae, explicabo maxime voluptatibus ducimus iure</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae, explicabo maxime voluptatibus ducimus iure</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact me</h2>
+        <a href="mailto:hello@yahoo.com">hello@yahoo.com</a>
+    </section>
+    <footer>All rights reserved</footer>
+</body>
+</html>
